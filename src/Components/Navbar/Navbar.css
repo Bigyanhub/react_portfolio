@@ -19,16 +19,12 @@
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
   font-size: 22px;
   cursor: pointer;
-  transition: 0.5s;
-  /* When its not a div but button */
-  border: none;
-  /* If we use the div instead of button , below is for smooth animation */
   /* These transform and backface-visibility properties help avoid text shifting or 'jumping' when scaling a div,
        by ensuring the GPU handles the animation smoothly and the text remains crisp during transitions. */
-  /* transition: transform 0.5s;
-    transform: scale(1);
-    will-change: transform;
-    backface-visibility: hidden; */
+  transition: transform 0.5s;
+  transform: scale(1);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .nav-connect:hover {
