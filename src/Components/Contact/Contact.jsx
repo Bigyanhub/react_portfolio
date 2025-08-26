@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
@@ -6,7 +6,8 @@ import call_icon from "../../assets/call_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
 
 const Contact = () => {
-
+  const [showSuccess, setShowSuccess] = useState(false);
+  
   //This is the submit handler for the contact form
   // It sends the form data to the Web3Forms API
   const onSubmit = async (event) => {
@@ -28,13 +29,37 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message);
+      // Show success message instead of alert
+      setShowSuccess(true);
+      // Clear form
+      event.target.reset();
+      // Hide message after 5 seconds
+      setTimeout(() => setShowSuccess(false), 5000);
     }
   };
 
 
   return (
     <div id="contact" className="contact">
+        {/* Success Message */}
+      {showSuccess && (
+        <div className="success-message">
+          <div className="success-content">
+            <div className="success-icon">✓</div>
+            <div className="success-text">
+              <h3>Message Sent!</h3>
+              <p>Thanks for reaching out. I'll get back to you soon.</p>
+            </div>
+            <button 
+              className="success-close" 
+              onClick={() => setShowSuccess(false)}
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
+      
       <div className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />
