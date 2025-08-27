@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/about_profile.svg";
+import profile_img from "../../assets/about_profile.jpg";
 
 const About = () => {
   return (
@@ -18,15 +18,15 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I am an experienced Frontend Developer with over a decade of
-              professional expertise in the field. Throughout my career, I have
-              had the privilege of collaborating with prestigious organizations,
-              contributing to their success and growth.
+              I am an ancient Full Stack Developer with centuries of
+              questionable expertise. My career highlights include debugging
+              stone inscriptions, setting up WiFi in Lumbini, and teaching
+              JavaScript to the Gurkhas.
             </p>
             <p>
-              My passion for frontend development is not only reflected in my
-              extensive experience but also in the enthusiasm and dedication I
-              bring to each project.
+              My passion for coding goes beyond time itself-I still bring the
+              same energy whether I'm building modern React apps or patching
+              medieval scroll-based UIs.
             </p>
           </div>
           <div className="about-skills">
@@ -51,17 +51,17 @@ const About = () => {
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-          <h1>10+</h1>
+          <h1>3000+</h1>
           <p>YEARS OF EXPERIENCE</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>90+</h1>
+          <h1>9000+</h1>
           <p>PROJECTS COMPLETED</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>15+</h1>
+          <h1>5+</h1>
           <p>HAPPY CLIENTS</p>
         </div>
       </div>

@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="footer-top-left">
           <img src={footer_logo} alt="" />
           <p>
-            I am a frontend developer from, USA with 10 years of experience in
-            companies like Microsoft, Tesla and Apple.
+            I am a full stack developer from Nepal with 300 years of experience
+            in kingdoms like Malla, Shah and Rana.
           </p>
         </div>
 
@@ -26,11 +26,13 @@ const Footer = () => {
 
       <hr />
       <div className="footer-bottom">
-        <div className="footer-bottom-left">© 2025 Bigyan Basnet. All rights reserved.</div>
+        <div className="footer-bottom-left">
+          © 2025 Bigyan Basnet. All rights reserved.
+        </div>
         <div className="footer-bottom-right">
-            <p>Terms of Services</p>
-            <p>Privacy Policy</p>
-            <p>Connect with me</p>
+          <p>Terms of Services</p>
+          <p>Privacy Policy</p>
+          <p>Connect with me</p>
         </div>
       </div>
     </div>

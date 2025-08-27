@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import profile_img from "../../assets/profile_img.svg";
+import profile_img from "../../assets/profile_img.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
@@ -11,9 +11,8 @@ const Hero = () => {
         <span>I'm Bigyan Basnet,</span> Full Stack Developer based in Nepal.
       </h1>
       <p>
-        Full stack dev from Nepal with centuries of experience—built Prithivi
-        Narayan Shah's site in the 1700s and gave Gautam Buddha a minimalist
-        landing page in 500 BCE
+        Full stack developer from Nepal. Experienced in React, Node.js, and
+        occasionally time travel.
       </p>
       <div className="hero-action">
         <div className="hero-connect">
